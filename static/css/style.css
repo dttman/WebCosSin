@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'FontRus';
+	src: url(/fonts/adana_script.ttf);
+}
+.rus_type{
+	font-family: 'FontRus';
+	font-size: 20px;
+}
+.preloader_hidden{
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 0s 1s;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+  <script>
+    window.addEventListener('load', () => {
+      const preloader = document.querySelector('.spinner-border')
+      preloader.classList.add('preloader_hidden')
+    })
+  </script>
+  <title>{{title}}</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4">sinXcosY</span>
+      </a>
+    </header>
+  </div>
+
+  <div class="container">
+    <div class="col-md-12">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+       </div>
+      </div>
+      <img src="/figure.png/{{picture}}/{{funcSC}}/{{znach_func}}" alt="Графики" class="mx-auto d-block">
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
